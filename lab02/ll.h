@@ -50,4 +50,18 @@ ll_node_t *ll_get_nth_node(linked_list_t *l, unsigned int n);
  */
 ll_node_t *ll_remove_nth_node(linked_list_t* list, unsigned int n);
 
+/*
+ * @brief -> gets the nth node from the end
+ * @param -> list = the list from which we search for value
+ * @param -> n = the index of the node that we are interested in 
+ * @return -> returns the node at the given index
+ */
+ll_node_t* ll_get_nth_node_from_end(linked_list_t* list, unsigned int n);
+
+/*
+ * @brief -> reverses a linked-list in-place
+ * @param -> list = the list which we reverse
+ * @return -> returns 0 
+ */
+int ll_reverse(linked_list_t* list);
 #endif
